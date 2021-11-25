@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div style="overflow-x: auto;">
+        <h2 style="padding-left: 80px;">Calculator</h2>
+
+    <table id="calc">
+        <tr>
+            <td colspan="4"><input class="btn" name="display" id="txtinput" type="text"></td>
+        </tr>
+        <tr>
+            <td><input style="background-color: red;" class="btn" type="button" onclick="clearBox()" value="C"></td>
+            <td><input class="btn" type="button" onclick="backspace()" value="<"></td>
+            <td><input class="btn" type="button" onclick="displayValue('/')" value="/"></td>
+            <td><input class="btn" type="button" onclick="displayValue('*')" value="X"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" onclick="displayValue('7')" value="7"></td>
+            <td><input class="btn" type="button" onclick="displayValue('8')" value="8"></td>
+            <td><input class="btn" type="button" onclick="displayValue('9')" value="9"></td>
+            <td><input class="btn" type="button" onclick="displayValue('-')" value="-"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" onclick="displayValue('4')" value="4"></td>
+            <td><input class="btn" type="button" onclick="displayValue('5')" value="5"></td>
+            <td><input class="btn" type="button" onclick="displayValue('6')" value="6"></td>
+            <td><input class="btn" type="button" onclick="displayValue('+')" value="+"></td>
+        </tr>
+        <tr>
+            <td><input class="btn" type="button" onclick="displayValue('1')" value="1"></td>
+            <td><input class="btn" type="button" onclick="displayValue('2')" value="2"></td>
+            <td><input class="btn" type="button" onclick="displayValue('3')" value="3"></td>
+            <td rowspan="2"><input class="btn" type="button" onclick="evaluateExp()" value="="
+                    style="height: 82px!important;"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input class="btn" type="button" onclick="displayValue('0')" value="0"></td>
+            <td><input class="btn" type="button" onclick="displayValue('.')" value="."></td>
+        </tr>
+
+    </table>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+
+</html>
